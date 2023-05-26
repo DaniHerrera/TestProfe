@@ -1,0 +1,20 @@
+version: '3'
+
+networks:
+    net-php82:
+
+services:
+    # php
+    php82-service:
+        build:
+            context: .
+            dockerfile: ./php/Dockerfile
+        container_name: php82-container
+        ports:
+            - "9005:9000"
+        volumes:
+            - ./:/var/www/project
+        networks:
+            - net-php82
+
+
