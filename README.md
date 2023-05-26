@@ -8,7 +8,7 @@ docker-compose up -d
 
 ## Opción 1 (dentro del contenedor)
 ## entramos dentro del contendor
-docker-compose docker exec -it php82-container bash
+docker exec -it php82-container bash
 ## ejecutar
 php init.php input/entrada.txt output/salida.txt   ##El fichero de datos se encuentra en input/entrada.txt
 
